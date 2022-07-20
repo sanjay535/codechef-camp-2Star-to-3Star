@@ -33,7 +33,7 @@ public class CheatingTime {
       }
       else{
         Pair top=stack.peek();
-        if(top.s>p[i].f){
+        if(top.s>=p[i].f){
           Pair topE=stack.pop();
           stack.push(new Pair(Math.min(topE.f, p[i].f),Math.max(topE.s, p[i].s)));
         }else{
